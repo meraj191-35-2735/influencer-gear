@@ -1,0 +1,199 @@
+/*********************
+Import Link of Google Font  
+***********************/
+
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Merriweather&family=Playfair+Display&family=Poppins:wght@500;700&family=Roboto&family=Roboto+Condensed&family=Roboto+Slab:wght@100&family=Source+Sans+Pro&display=swap');
+
+/********************
+      Utilities 
+ *********************/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/********************
+    Nav Bar Styles
+ *********************/
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-of-header {
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.links ul {
+    display: flex;
+}
+
+.links li {
+    list-style: none;
+    padding-left: 34px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/********************
+    First Section Styles
+ *********************/
+
+.container-one {
+    width: 1110px;
+    height: 100vh;
+}
+
+.upper-part {
+    display: flex;
+}
+
+.upper-part:hover .picture img {
+    transform: scale(1.1, 1.1);
+    transition: transform 1s linear;
+}
+
+.description {
+    width: 50%;
+}
+
+.description h1 {
+    font-weight: bold;
+    font-size: 52px;
+}
+
+.description p {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 41px;
+    border: 1px solid #E02C6D;
+}
+
+.picture {
+    width: 50%;
+    overflow: hidden;
+}
+
+.picture img {
+    text-align: center;
+    width: 80%;
+    background: url(../images/pictures/Circle\ design.svg);
+    background-size: cover;
+}
+
+.first-horizontal-line {
+    margin-top: 92px;
+}
+
+hr {
+    background-color: gray;
+    color: gray;
+}
+
+.lower-part {
+    padding-left: 20px;
+    width: 1050px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Products collection styles. */
+
+.container-two {
+    width: 1047px;
+}
+
+.container-two .section-title {
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 2px gray;
+    border-radius: 5px;
+}
+
+.product img {
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+    padding-top: 20px;
+}
+
+.product-info {
+    padding-left: 30px;
+}
+
+.product h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 8 auto 6 auto;
+}
+
+.product h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.fa-star,
+.fa-star-half-alt {
+    color: orange;
+    font-size: 10px;
+}
+
+span {
+    color: gray;
+    font-size: 10px;
+}
+
+.product p {
+    font-size: 14px;
+    color: gray;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
