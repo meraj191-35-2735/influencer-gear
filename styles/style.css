@@ -254,7 +254,7 @@ footer {
 }
 
 
-/* Media Queries for Responsive Design */
+/* Media Queries for Mobile Devices */
 
 @media only screen and (max-width: 688px) {
     .container-of-header {
@@ -324,13 +324,18 @@ footer {
         text-align: center;
     }
     .motivation-video iframe {
-        width: 60%;
+        width: 90%;
     }
     .footer-style {
         width: 100%;
         margin: 0;
     }
 }
+
+
+/* ------------------------------
+Media Queries for Tablet Devices
+--------------------------------- */
 
 @media only screen and (min-width:689px) and (max-width:992px) {
     .container-of-header {
@@ -401,7 +406,7 @@ footer {
         text-align: center;
     }
     .motivation-video iframe {
-        width: 80%;
+        width: 90%;
     }
     .footer-style {
         width: 100%;
