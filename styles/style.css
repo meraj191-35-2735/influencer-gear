@@ -66,11 +66,12 @@ header {
 
 .container-one {
     width: 1110px;
-    height: 100vh;
 }
 
 .upper-part {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
 }
 
 .upper-part:hover .picture img {
@@ -78,13 +79,9 @@ header {
     transition: transform 0.8s linear;
 }
 
-.description {
-    flex: 1;
-}
-
 .description h1 {
     font-weight: bold;
-    font-size: 52px;
+    font-size: 40px;
 }
 
 .description p {
@@ -102,12 +99,12 @@ button {
 }
 
 .picture {
-    flex: 1;
     overflow: hidden;
 }
 
 .picture img {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     width: 80%;
     background: url(../images/pictures/Circle\ design.svg);
     background-size: cover;
@@ -222,11 +219,6 @@ button a {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.description h1 {
-    font-size: 40px;
-    font-weight: bold;
-}
-
 
 /* Footer styles */
 
@@ -259,4 +251,160 @@ footer {
 .fab {
     padding: 18px 10px 0 10px;
     font-size: 20px;
+}
+
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 688px) {
+    .container-of-header {
+        display: flex;
+        justify-content: center;
+    }
+    .links {
+        display: none;
+    }
+    .container-one {
+        width: 100%;
+    }
+    .upper-part {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
+    .description {
+        text-align: center;
+        width: 100%;
+    }
+    .description h1 {
+        font-size: 25px;
+    }
+    .description p {
+        margin: auto 10px;
+        font-size: 12px;
+    }
+    button {
+        margin-top: 10px;
+    }
+    .picture {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .picture img {
+        width: 50%;
+    }
+    hr {
+        display: none;
+    }
+    .lower-part {
+        display: none;
+    }
+    .fixed-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+    .more-button {
+        display: flex;
+        justify-content: center;
+    }
+    .influencer-detail {
+        width: 100%;
+        display: grid;
+        grid-row-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .motivation-video {
+        width: 100%;
+        text-align: center;
+    }
+    .motivation-video iframe {
+        width: 60%;
+    }
+    .footer-style {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container-of-header {
+        display: flex;
+        justify-content: center;
+    }
+    .links {
+        display: none;
+    }
+    .container-one {
+        width: 100%;
+    }
+    .upper-part {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
+    .description {
+        width: 100%;
+        text-align: center;
+    }
+    .description h1 {
+        font-size: 30px;
+    }
+    .description p {
+        margin: auto 10px;
+        font-size: 13px;
+    }
+    button {
+        margin-top: 15px;
+    }
+    .picture {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .picture img {
+        width: 50%;
+    }
+    hr {
+        display: none;
+    }
+    .lower-part {
+        display: none;
+    }
+    .fixed-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+    }
+    .more-button {
+        display: flex;
+        justify-content: center;
+    }
+    .influencer-detail {
+        width: 100%;
+        display: grid;
+        grid-column-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .motivation-video {
+        width: 100%;
+        text-align: center;
+    }
+    .motivation-video iframe {
+        width: 80%;
+    }
+    .footer-style {
+        width: 100%;
+        margin: 0;
+    }
 }
