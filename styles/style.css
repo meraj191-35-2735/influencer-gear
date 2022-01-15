@@ -75,11 +75,11 @@ header {
 
 .upper-part:hover .picture img {
     transform: scale(1.1, 1.1);
-    transition: transform 1s linear;
+    transition: transform 0.8s linear;
 }
 
 .description {
-    width: 50%;
+    flex: 1;
 }
 
 .description h1 {
@@ -102,7 +102,7 @@ button {
 }
 
 .picture {
-    width: 50%;
+    flex: 1;
     overflow: hidden;
 }
 
@@ -132,11 +132,12 @@ hr {
 
 /* Products collection styles. */
 
-.container-two {
+.fixed-container {
     width: 1047px;
+    margin-bottom: 30px;
 }
 
-.container-two .section-title {
+.fixed-container .section-title {
     text-align: center;
 }
 
@@ -196,4 +197,66 @@ span {
 button a {
     text-decoration: none;
     color: black;
+}
+
+.more-button {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #E02C6D;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+
+.fa-arrow-circle-right {
+    padding-left: 8px;
+}
+
+
+/* More about influencer section styles */
+
+.influencer-detail {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.description h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/* Footer styles */
+
+footer {
+    margin: 0;
+    color: white;
+    background-color: #0A0826;
+    margin-top: 30px;
+}
+
+.footer-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.footer-style h1 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-style p {
+    font-size: 14px;
+    margin: 0;
+    padding: 3 0;
+}
+
+.fab {
+    padding: 18px 10px 0 10px;
+    font-size: 20px;
 }
